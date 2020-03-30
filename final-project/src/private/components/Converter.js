@@ -20,8 +20,10 @@ const Converter = () => {
 
     return(
         <div className="converter">
+            <div className="msg">
             <p>{message}</p>
-            <form onSubmit={(e) => handleSubmit(e)}>
+            </div>
+            <form className="form" onSubmit={(e) => handleSubmit(e)}>
                 <input id="message" value={input} type="text" onInput={(e) => setInput(e.target.value)} placeholder={placeholder} />
                 <button type="submit">C0NV3R7!</button>
             </form>

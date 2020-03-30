@@ -6,9 +6,9 @@ const MoreFacts = () => {
     const [number,setNumber] = useState('');
     const [path,setPath] = useState('math');
     
-    const [fact1,setFact1] = useState('');
-    const [fact2,setFact2] = useState('');
-    const [fact3,setFact3] = useState('');
+    const [fact1,setFact1] = useState('MORE');
+    const [fact2,setFact2] = useState('FACTS');
+    const [fact3,setFact3] = useState('HERE');
 
     let numb1 = '';
     let numb2 = '';
@@ -16,25 +16,43 @@ const MoreFacts = () => {
 
     const startsWith = (e) => {
         if(e.key === 'Enter'){
-            numb1 = `${number}${Math.floor(Math.random()*10)}`;
-            numb2 = `${number}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}`;
-            numb3 = `${number}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}`;   
+            if(number < 0){
+                setFact1('Just');
+                setFact2('Stay');
+                setFact3('Positive! :)')
+            } else {
+                numb1 = `${number}${Math.floor(Math.random()*10)}`;
+                numb2 = `${number}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}`;
+                numb3 = `${number}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}`;   
+            }
         }
     }
 
     const includes = (e) => {
         if(e.key === 'Enter'){
-            numb1 = `${Math.floor(Math.random()*10)}${number}`;
-            numb2 = `${Math.floor(Math.random()*10)}${number}${Math.floor(Math.random()*10)}`;
-            numb3 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}${Math.floor(Math.random()*10)}`;
+            if(number < 0){
+                setFact1('Just');
+                setFact2('Stay');
+                setFact3('Positive! :)')
+            } else {
+                numb1 = `${Math.floor(Math.random()*10)}${number}`;
+                numb2 = `${Math.floor(Math.random()*10)}${number}${Math.floor(Math.random()*10)}`;
+                numb3 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}${Math.floor(Math.random()*10)}`;
+            }
         }
     }
     
     const endsWith = (e) => {
         if(e.key === 'Enter'){
-            numb1 = `${Math.floor(Math.random()*10)}${number}`;
-            numb2 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}`;
-            numb3 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}`;
+            if(number < 0){
+                setFact1('Just');
+                setFact2('Stay');
+                setFact3('Positive! :)')
+            } else {
+                numb1 = `${Math.floor(Math.random()*10)}${number}`;
+                numb2 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}`;
+                numb3 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}`;
+            }
         }
     }
 
@@ -48,24 +66,27 @@ const MoreFacts = () => {
 
     return(
         <div className="more-facts">
+            <div className="info">
             <p>You can also get random
                 <select onChange={(e) => setPath(e.target.value)}>
                     <option value="math">Math</option>
                     <option value="trivia">Trivia</option>
-                    <option value="date">Date</option>
                 </select> 
-                facts for a few numbers that</p>
-                <p>startsWith(
+                fact for a few numbers that</p>
+                <p>startWith(
                         <input className="int" type="number" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => {startsWith(e); showFacts(e)}}/>
-                    ), includes(
+                    ), include(
                         <input className="int" type="number" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => {includes(e); showFacts(e)}}/>
-                    )or endsWith(
+                    )or endWith(
                         <input className="int" type="number" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => {endsWith(e); showFacts(e)}}/>
                     )
             </p>
+            </div>
+            <div className="fact-p">
             <p>{fact1}</p>
             <p>{fact2}</p>
             <p>{fact3}</p>
+            </div>
         </div>
     )
 

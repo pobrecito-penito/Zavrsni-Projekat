@@ -4,49 +4,50 @@ import { getFact } from '../../services/api.service';
 const ChosenFacts = () => {
 
     const [number,setNumber] = useState('');
-    
-    const [mathFact,setMathFact] = useState('');
-    const [triviaFact,setTriviaFact] = useState('');
-    const [dateFact,setDateFact] = useState('');
+    const [fact,setFact] = useState('...');
+    const [type,setType] = useState('Fact coming here ↓');
 
     const showMathFact = (e) => {
         if(e.key === 'Enter'){
-            getFact(number,'/math').then(res => {
-                console.log(res.data);
-                setMathFact(res.data);
-            })
-            console.log(number);
+            if(number < 0){
+                setFact('Positive! :)');
+                setType('Always Be');
+            } else {
+                getFact(number,'/math').then(res => setFact(res.data));
+                setType('Math fact');
+            }
         }
     }
 
     const showTriviaFact = (e) => {
         if(e.key === 'Enter'){
-            getFact(number,'').then(res => {
-                console.log(res.data);
-                setTriviaFact(res.data);
-            })
+            if(number < 0){
+                setFact('Positive! :)');
+                setType('Always Be');
+            } else {
+                setFact('Loading...')
+                getFact(number,'').then(res => setFact(res.data));
+                setType('Trivia fact');
+            }
         }
     }
     
     const showDateFact = () => {
-        getFact(number,'/date').then(res => {
-            console.log(res.data);
-            setDateFact(res.data);
-        })
+        getFact(number,'/date').then(res => setFact(res.data));
+        setType('Date fact');
     }
     
     
     return(
         <div className="chosen-facts">
+            <div className="facts">
             <div className="fact">
                 <h3>Math</h3>
                 <input type="number" className="number" placeholder="?" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => showMathFact(e)} />
-                <p>{mathFact}</p>
             </div>
             <div className="fact">
                 <h3>Trivia</h3>
                 <input type="number" className="number" placeholder="?" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => showTriviaFact(e)} />
-                <p>{triviaFact}</p>
             </div>
             <div className="fact">
                 <h3>Date</h3>
@@ -54,7 +55,11 @@ const ChosenFacts = () => {
                     <input type="text" className="number" placeholder="?" onInput={(e) => setNumber(e.target.value)} pattern="(0?[1-9]|1[012])[\/\/](0?[1-9]|[12][0-9]|3[01])$" />
                     <input type="submit" id="btn-submit" />
                 </form>
-                <p>{dateFact}</p>
+            </div>
+            </div>
+            <div className="facts-p">
+            <p>{type}</p> 
+            <p>{fact}</p>
             </div>
         </div>
     )

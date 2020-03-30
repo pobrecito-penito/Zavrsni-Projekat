@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
+import { registerUser, loginUser } from '../../services/api.server';
+import { setToken, setId } from '../../services/auth.service';
 
 const Register = () => {
     const [name,setName] = useState('');
@@ -15,30 +17,33 @@ const Register = () => {
         name: name,
         surname: surname,
         username: username,
-        email: email, 
-        password: password
+        password: password,
+        email: email,
     }
 
     const handleSubmit = () => {
-        password === confirmPass ? console.log(user) : alert(`Passwords don't match!`);
-        document.querySelector('#name').value = ''; 
-        document.querySelector('#surname').value = '';
-        document.querySelector('#username').value = ''; 
-        document.querySelector('#email').value = ''; 
-        document.querySelector('#password').value = '';
-        document.querySelector('#conf-pass').value = ''; 
-        history.push('login');
+        if(password === confirmPass){
+            registerUser(user).then(() => {
+               loginUser(username,password).then(res => {
+                   setToken(res.data.token);
+                   setId(res.data.user.user_id);
+                   history.push('home');
+               }) 
+            })
+        } else {
+            alert(`Passwords don't match!`);
+        }
     }
 
     return(
-        <form id="register-form" onSubmit={(e) => { e.preventDefault(); handleSubmit() }}>
-            <input type="text" id="name" placeholder="Enter your name" onInput={(e) => setName(e.target.value)} required/>
-            <input type="text" id="surname" placeholder="Enter your surname" onInput={(e) => setSurname(e.target.value)} required/>
-            <input type="text" id="username" placeholder="Enter your username" onInput={(e) => setUsername(e.target.value)} required/>
-            <input type="email" id="email" placeholder="Enter your email" onInput={(e) => setEmail(e.target.value)} pattern=".+@.+\..+" required/>
-            <input type="password" id="password" placeholder="Enter your password" onInput={(e) => setPassword(e.target.value)} required/>
-            <input type="password" id="conf-pass" placeholder="Confirm your password" onInput={(e) => setConfirmPass(e.target.value)} required/>
-            <input type="submit" value="Register!" />
+        <form className="register-form" onSubmit={(e) => { e.preventDefault(); handleSubmit() }}>
+            <div className="reg-input"><input type="text" id="name" placeholder="NAME" onInput={(e) => setName(e.target.value)} required/></div>
+            <div className="reg-input"><input type="text" id="surname" placeholder="SURNAME" onInput={(e) => setSurname(e.target.value)} required/></div>
+            <div className="reg-input"><input type="text" id="username" placeholder="USERNAME" onInput={(e) => setUsername(e.target.value)} required/></div>
+            <div className="reg-input"><input type="email" id="email" placeholder="EMAIL" onInput={(e) => setEmail(e.target.value)} pattern=".+@.+\..+" required/></div>
+            <div className="reg-input"><input type="password" id="password" placeholder="PASSWORD" onInput={(e) => setPassword(e.target.value)} required/></div>
+            <div className="reg-input"><input type="password" id="conf-pass" placeholder="CONFIRM PASSWORD" onInput={(e) => setConfirmPass(e.target.value)} required/></div>
+            <div className="reg-input"><input className="reg-btn" type="submit" value="Register!" /></div>
         </form>
     )
 }
