@@ -12,15 +12,15 @@ const RandomFact = () => {
 
     return(
         <div className="random-facts">
-            <div className="info">
+            <div className="text">
             <p>If you're not sure which number to choose, we'll choose one for you! Just tell us what type of fact you want to know.</p>
             </div>
             <div className="select">
             <select onChange={(e) => setSelected(e.target.value)}>
-                <option value="math" selected>Trivia Fact</option>
-                <option value="trivia">Year Fact</option>
+                <option value="math" >Math Fact</option>
+                <option value="trivia">Trivia Fact</option>
                 <option value="date">Date Fact</option>
-                <option value="year">Math Fact</option>
+                <option value="year">Year Fact</option>
             </select>
             </div>
             <div className="fact-p">

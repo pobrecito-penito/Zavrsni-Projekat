@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { registerUser, loginUser } from '../../services/api.server';
 import { setToken, setId } from '../../services/auth.service';
+import Header from './Header';
 
 const Register = () => {
     const [name,setName] = useState('');
@@ -36,6 +37,8 @@ const Register = () => {
     }
 
     return(
+        <>
+        <Header />
         <form className="register-form" onSubmit={(e) => { e.preventDefault(); handleSubmit() }}>
             <div className="reg-input"><input type="text" id="name" placeholder="NAME" onInput={(e) => setName(e.target.value)} required/></div>
             <div className="reg-input"><input type="text" id="surname" placeholder="SURNAME" onInput={(e) => setSurname(e.target.value)} required/></div>
@@ -43,8 +46,9 @@ const Register = () => {
             <div className="reg-input"><input type="email" id="email" placeholder="EMAIL" onInput={(e) => setEmail(e.target.value)} pattern=".+@.+\..+" required/></div>
             <div className="reg-input"><input type="password" id="password" placeholder="PASSWORD" onInput={(e) => setPassword(e.target.value)} required/></div>
             <div className="reg-input"><input type="password" id="conf-pass" placeholder="CONFIRM PASSWORD" onInput={(e) => setConfirmPass(e.target.value)} required/></div>
-            <div className="reg-input"><input className="reg-btn" type="submit" value="Register!" /></div>
+            <div className="reg-input"><input id="reg-btn" type="submit" value="Register!" /></div>
         </form>
+        </>
     )
 }
 

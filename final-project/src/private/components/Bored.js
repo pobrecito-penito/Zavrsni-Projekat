@@ -26,11 +26,11 @@ const Bored = () => {
 
     return(
         <div className="info">
-            <p>Still bored? Let's find you something to do! Tell us how many friends you have and we'll give you a suggestion!
+            <p>Still bored? Let's find you something to do! Tell us how many friends you have and we'll give you a suggestion!</p>
                 <form onSubmit={(e) => setSuggestion(e)}>
                     <input className="int" type="number" placeholder="?" onInput={(e) => setNumber(parseInt(e.target.value))} />
-                    <input class="submit "type="submit" value="GO!" />
-                </form></p>
+                    <input className="submit "type="submit" value="GO!" />
+                </form>
                 <div>
                     <p>{sugg}</p>
                 </div>

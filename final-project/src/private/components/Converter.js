@@ -24,7 +24,7 @@ const Converter = () => {
             <p>{message}</p>
             </div>
             <form className="form" onSubmit={(e) => handleSubmit(e)}>
-                <input id="message" value={input} type="text" onInput={(e) => setInput(e.target.value)} placeholder={placeholder} />
+                <input id="message" value={input} type="text" onChange={(e) => setInput(e.target.value)} placeholder={placeholder} />
                 <button type="submit">C0NV3R7!</button>
             </form>
         </div>

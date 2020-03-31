@@ -17,7 +17,7 @@ const Logout = () => {
     return(
         <div id="logout">
             Log out? 
-            <select onChange={(e) => handleChange(e)}>
+            <select className="logout-select" onChange={(e) => handleChange(e)}>
                 <option>No way!</option>
                 <option value="logout">Yes, bye!</option>
             </select>

@@ -21,7 +21,9 @@ const Profile = () => {
 
     return(
         <div className="profile">
+            <div className="username">
            <p>Hello {user.username}!</p>
+           </div>
            <div className="user">
                <h3>Info</h3>
                <p>Name: {user.name}</p>

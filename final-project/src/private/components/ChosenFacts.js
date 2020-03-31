@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import { getFact } from '../../services/api.service';
+import Spinner from '../../layout/spinner'
 
 const ChosenFacts = () => {
-
+    
     const [number,setNumber] = useState('');
     const [fact,setFact] = useState('...');
     const [type,setType] = useState('Fact coming here ↓');
+
+    const [loading,setLoading] = useState(false); 
+
 
     const showMathFact = (e) => {
         if(e.key === 'Enter'){
@@ -13,7 +17,11 @@ const ChosenFacts = () => {
                 setFact('Positive! :)');
                 setType('Always Be');
             } else {
-                getFact(number,'/math').then(res => setFact(res.data));
+                setLoading(true);
+                getFact(number,'/math').then(res => {
+                    setLoading(false);
+                    setFact(res.data);
+                });
                 setType('Math fact');
             }
         }
@@ -58,8 +66,11 @@ const ChosenFacts = () => {
             </div>
             </div>
             <div className="facts-p">
-            <p>{type}</p> 
-            <p>{fact}</p>
+                {loading ? <Spinner /> : 
+                    <div>
+                    <p>{type}</p> 
+                    <p>{fact}</p>
+                    </div>}
             </div>
         </div>
     )

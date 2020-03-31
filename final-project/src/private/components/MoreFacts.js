@@ -68,11 +68,11 @@ const MoreFacts = () => {
         <div className="more-facts">
             <div className="info">
             <p>You can also get random
-                <select onChange={(e) => setPath(e.target.value)}>
-                    <option value="math">Math</option>
-                    <option value="trivia">Trivia</option>
+                <select id="select" onChange={(e) => setPath(e.target.value)}>
+                    <option value="math">Math Fact</option>
+                    <option value="trivia">Trivia Fact</option>
                 </select> 
-                fact for a few numbers that</p>
+                for a few numbers that</p>
                 <p>startWith(
                         <input className="int" type="number" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => {startsWith(e); showFacts(e)}}/>
                     ), include(
@@ -82,7 +82,7 @@ const MoreFacts = () => {
                     )
             </p>
             </div>
-            <div className="fact-p">
+            <div id="p" className="fact-p">
             <p>{fact1}</p>
             <p>{fact2}</p>
             <p>{fact3}</p>
