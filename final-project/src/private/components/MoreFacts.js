@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { getFact } from '../../services/api.service';
+import Spinner from '../../layout/spinner'
 
 const MoreFacts = () => {
 
     const [number,setNumber] = useState('');
     const [path,setPath] = useState('math');
     
-    const [fact1,setFact1] = useState('MORE');
-    const [fact2,setFact2] = useState('FACTS');
-    const [fact3,setFact3] = useState('HERE');
+    const [loading,setLoading] = useState(false);
+
+    const [fact1,setFact1] = useState('');
+    const [fact2,setFact2] = useState('');
+    const [fact3,setFact3] = useState('');
 
     let numb1 = '';
     let numb2 = '';
@@ -20,6 +23,10 @@ const MoreFacts = () => {
                 setFact1('Just');
                 setFact2('Stay');
                 setFact3('Positive! :)')
+            } else if(number === ''){
+                setFact1('Choose');
+                setFact2('Your');
+                setFact3('Number!');
             } else {
                 numb1 = `${number}${Math.floor(Math.random()*10)}`;
                 numb2 = `${number}${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}`;
@@ -34,6 +41,10 @@ const MoreFacts = () => {
                 setFact1('Just');
                 setFact2('Stay');
                 setFact3('Positive! :)')
+            } else if(number === ''){
+                setFact1('Choose');
+                setFact2('Your');
+                setFact3('Number!');
             } else {
                 numb1 = `${Math.floor(Math.random()*10)}${number}`;
                 numb2 = `${Math.floor(Math.random()*10)}${number}${Math.floor(Math.random()*10)}`;
@@ -48,6 +59,10 @@ const MoreFacts = () => {
                 setFact1('Just');
                 setFact2('Stay');
                 setFact3('Positive! :)')
+            } else if(number === ''){
+                setFact1('Choose');
+                setFact2('Your');
+                setFact3('Number!');
             } else {
                 numb1 = `${Math.floor(Math.random()*10)}${number}`;
                 numb2 = `${Math.floor(Math.random()*10)}${Math.floor(Math.random()*10)}${number}`;
@@ -58,7 +73,11 @@ const MoreFacts = () => {
 
     const showFacts = (e) => {
         if(e.key === 'Enter'){
-            getFact(numb1,`/${path}`).then(res => setFact1(res.data));
+            setLoading(true);
+            getFact(numb1,`/${path}`).then(res => {
+                setLoading(false);
+                setFact1(res.data);
+            });
             getFact(numb2,`/${path}`).then(res => setFact2(res.data));
             getFact(numb3,`/${path}`).then(res => setFact3(res.data));
         }
@@ -82,11 +101,12 @@ const MoreFacts = () => {
                     )
             </p>
             </div>
+            {loading ? <Spinner /> : 
             <div id="p" className="fact-p">
             <p>{fact1}</p>
             <p>{fact2}</p>
             <p>{fact3}</p>
-            </div>
+            </div> }
         </div>
     )
 

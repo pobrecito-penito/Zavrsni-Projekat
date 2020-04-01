@@ -11,7 +11,6 @@ const YouChoose = () => {
         <Header />
         <Text />
         <ChosenFacts />
-        <Logout />
         </>
     )
 

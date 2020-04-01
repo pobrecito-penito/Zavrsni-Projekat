@@ -4,13 +4,17 @@ body{
   height: 100%;
   width: 100%;
   font-family: 'Aclonica', sans-serif;
-  background-color:  rgb(0, 0, 0, 0.9);
-  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.9), rgb(0, 0, 0,0.7)),url('./assets/numbers.png');
-  background-size: cover;
+  /* background-color:  rgb(0, 0, 0, 0.9);
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.9), rgb(0, 0, 0,0.7)),url('./assets/numbers.png'); */
+  background: url('./assets/pokusaj7.jpg') no-repeat center center fixed;
   color: white;
+  background-size: cover;
 }
 
-
+#app {
+ height: 100%;
+ width: 100%;
+}
 /* HEADER */
 .header{
   display: grid;
@@ -45,7 +49,12 @@ body{
   color: white;
 }
 
-/* NAVIGATION */
+.help {
+  display: grid;
+  grid-template-columns: 95% 5%;
+}
+
+/* WELCOME PAGE */
 
 .info{
   margin-left: 100px;
@@ -127,15 +136,87 @@ body{
   margin-left: 140px;
 }
 
-/* PROFILE */
+/* HOME AND PROFILE */
 
 .profile {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+
 }
 
-/* HOME */
+.fav {
+ display: grid;
+ grid-template-rows:  1fr 1fr;
+ align-items: center;
+ border: groove;
+padding: 15px;
+
+} 
+
+.username {
+  margin-left: 40px;
+}
+
+.user {
+  
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1.5px black;
+}
+
+.bored {
+ width: 100%;
+  text-align: center;
+  font-size:large;
+  justify-content: center; 
+
+}
+
+.int {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-style: solid;
+  border-color: rgb(255, 250, 250, 0.5);
+  font-weight: bold;
+  font-size: large;
+  border-radius: 7%;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.3);
+  font-family: 'Aclonica', sans-serif;
+}
+
+.submit {
+  height: 35px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  background-color: rgb(0, 0, 0, 0);
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  font-family: 'Aclonica', sans-serif;
+  font-size: x-large;
+  width: fit-content;
+  border-style: double;
+  justify-self: center;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.logout {
+  text-transform: uppercase;
+  font-size: small;
+  color: whitesmoke;
+  border: 5px double white;
+  align-self: center;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0);
+  border-radius: 10%;
+  padding: 5px;
+  background-color: rgb(11, 12, 16, 0.5);
+}
+/* Choose */
 
 .prof {
   margin: 10px 25px;
@@ -144,7 +225,7 @@ body{
 
 .text {
   text-align: center;
-  font-size: x-large;
+  font-size: larger;
   margin: 50px;
 }
 
@@ -163,39 +244,31 @@ body{
 }
 
 .fact {
-  padding: 30px;
-  padding-top: 10px;
+  padding: 10px;
   /* background-color: rgb(11, 12, 16, 0.9); */
-  background-color: rgba(35, 48, 63, 0.9);
-  border-radius: 7%;
   text-transform: uppercase;
-  text-shadow: 1.5px 1.5px 2px rgb(0, 0, 0);
+  /* text-shadow: 1.5px 1.5px 2px rgb(0, 0, 0); */
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 1px 1px 1.5px black;
 }
 
-.fact input{
-  width: 80px;
-  height: 80px;
-  font-family: 'Aclonica', sans-serif;
-  text-align: center;
-  background-color: rgb(253, 245, 230);
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: large;
-  border-radius: 7%;
-}
  
 .facts-p {
-  height: 130px;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 30px;
   text-align: center;
   padding: 10px;
-  background-color: rgba(35, 48, 63, 0.9);
+  font-size: larger;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
   border-radius: 10px;
-  font-size: x-large;
+  margin-top: 30px;
 }
+
+
+
+/* RANDOM */
 
 .random-facts {
   display: grid;
@@ -207,13 +280,13 @@ body{
 .select {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
-  margin-top: -40px;
+  margin-bottom: 30px;
+  margin-top: -30px;
 }
 
 select {
-  background-color: rgba(35, 48, 63, 0.9);;
-  border-radius: 8px;
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 10px;
   text-transform: uppercase;
   color: white;
   font-weight: 600;
@@ -226,24 +299,16 @@ select {
   margin: 0 auto;
   text-align: center;
   padding: 10px;
-  background-color: rgba(35, 48, 63, 0.9);
   border-radius: 10px;
-  font-size: x-large;
+  font-size: large;
   
 }
-
-.int {
-  width: 50px;
-  height: 50px;
-  font-family: 'Aclonica', sans-serif;
-  text-align: center;
-  background-color: rgb(253, 245, 230);
-  border-style: solid;
-  border-color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-size: large;
-  border-radius: 7%;
+.fact-p p {
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
 }
+
 
 #select {
   font-size: large;
@@ -255,13 +320,16 @@ select {
 }
 
 .msg {
-  height: 500px;
-  width: 700px;
-  background-image: url('./assets/quote.png');
-  background-size: cover;
-  margin-left: 100px;
+  height: 400px;
+  width: 630px;
+  background-image: url('./assets/textBox.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+ 
   text-align: center;
   justify-content: center;
+  justify-self: center;
 }
 
 .msg p {
@@ -277,40 +345,41 @@ select {
 }
 
 .converter input {
+  width: 400px;
   text-align: center;
-  background-color: rgb(253, 245, 230);
-  border-style: double;
-  border-color: rgb(163, 179, 230);
+  border-style: solid;
+  border-color: rgb(255, 250, 250, 0.5);
   font-weight: bold;
   font-size: large;
-  width: 470px;
-  height: 50px;
-  margin-left: 140px;
+  border-radius: 7%;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.3);
+  font-family: 'Aclonica', sans-serif;
+}
+.form {
+  justify-self: center;
+  justify-content: center;
 }
 
 .converter button {
+  height: 35px;
+  width: 400px;
   text-align: center;
-  background-color: rgb(253, 245, 230);
+  color: white;
+  background-color: rgb(0, 0, 0, 0);
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  font-family: 'Aclonica', sans-serif;
+  font-size: large;
+  width: fit-content;
   border-style: double;
-  border-color: rgb(163, 179, 230);
-  font-weight: lighter;
-  font-size: medium;
-  height: 57px;
-  width: 100px;
-  margin-left: 15px;
+  justify-self: center;
+  text-transform: uppercase;
+  margin-left: 40px;
 }
 
-.submit {
-  text-align: center;
-  background-color: rgb(253, 245, 230);
-  border-style: double;
-  border-color: rgb(163, 179, 230);
-  font-weight: lighter;
-  font-size: medium;
-  height: 50px;
-  width: 70px;
-  margin-left: 15px;
-}
+
 
 #logout {
   display: flex;
@@ -318,9 +387,7 @@ select {
   font-size: large;
   text-shadow: 1.5px 1.5px  rgb(163, 179, 230);
   font-weight: bolder;
-  padding-bottom: 10px;
+  position: fixed;
+  right: 8vw;
 }
 
-.logout-select {
-  margin-left: 10px;
-}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { getUserById } from '../../services/api.server'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
 
@@ -21,14 +22,24 @@ const Profile = () => {
 
     return(
         <div className="profile">
+            <div className="infos">
             <div className="username">
-           <p>Hello {user.username}!</p>
+           <h3>Hello {user.username}!</h3>
            </div>
            <div className="user">
-               <h3>Info</h3>
+               <h4>Your Info</h4>
                <p>Name: {user.name}</p>
                <p>Surname: {user.surname}</p>
                <p>Email: {user.email}</p>
+           </div>
+           </div>
+           <div className="fav">
+               <div>
+               <Link className="nav" to="/favorites">Favorites</Link>
+               </div>
+               <div>
+               <Link className="nav" to="/history">History</Link>
+               </div>
            </div>
         </div>
     )

@@ -1,11 +1,12 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom'
+import { isLogin } from '../services/auth.service'
 
 const PublicRoute = ({component: Component,path}) => {
 
     return(
         <Route exact path={path}>
-            <Component />
+            {!isLogin() ?  <Component /> : <Redirect to="/home" />}
         </Route>
     )
 }

@@ -5,8 +5,8 @@ import Spinner from '../../layout/spinner'
 const ChosenFacts = () => {
     
     const [number,setNumber] = useState('');
-    const [fact,setFact] = useState('...');
-    const [type,setType] = useState('Fact coming here ↓');
+    const [fact,setFact] = useState('');
+    const [type,setType] = useState('');
 
     const [loading,setLoading] = useState(false); 
 
@@ -16,6 +16,9 @@ const ChosenFacts = () => {
             if(number < 0){
                 setFact('Positive! :)');
                 setType('Always Be');
+            } else if(number === ''){
+                setType('Choose');
+                setFact('Your Number!')
             } else {
                 setLoading(true);
                 getFact(number,'/math').then(res => {
@@ -32,17 +35,32 @@ const ChosenFacts = () => {
             if(number < 0){
                 setFact('Positive! :)');
                 setType('Always Be');
+            } else if(number === ''){
+                setType('Choose');
+                setFact('Your Number!')
             } else {
-                setFact('Loading...')
-                getFact(number,'').then(res => setFact(res.data));
+                setLoading(true);
+                getFact(number,'').then(res => {
+                    setLoading(false);
+                    setFact(res.data);
+                });
                 setType('Trivia fact');
             }
         }
     }
     
     const showDateFact = () => {
-        getFact(number,'/date').then(res => setFact(res.data));
-        setType('Date fact');
+        if(number === ''){
+            setType('Choose');
+            setFact('Your Number!')
+        } else {
+            setLoading(true);
+            getFact(number,'/date').then(res => {
+                setLoading(false);
+                setFact(res.data);
+            });
+            setType('Date fact');
+        }
     }
     
     
@@ -51,16 +69,16 @@ const ChosenFacts = () => {
             <div className="facts">
             <div className="fact">
                 <h3>Math</h3>
-                <input type="number" className="number" placeholder="?" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => showMathFact(e)} />
+                <input type="number" className="int" placeholder="?" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => showMathFact(e)} />
             </div>
             <div className="fact">
                 <h3>Trivia</h3>
-                <input type="number" className="number" placeholder="?" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => showTriviaFact(e)} />
+                <input type="number" className="int" placeholder="?" onInput={(e) => setNumber(e.target.value)} onKeyDown={(e) => showTriviaFact(e)} />
             </div>
             <div className="fact">
                 <h3>Date</h3>
                 <form onSubmit={(e) => { e.preventDefault(); showDateFact() }}>
-                    <input type="text" className="number" placeholder="?" onInput={(e) => setNumber(e.target.value)} pattern="(0?[1-9]|1[012])[\/\/](0?[1-9]|[12][0-9]|3[01])$" />
+                    <input type="text" className="int" placeholder="?" onInput={(e) => setNumber(e.target.value)} pattern="(0?[1-9]|1[012])[\/\/](0?[1-9]|[12][0-9]|3[01])$" />
                     <input type="submit" id="btn-submit" />
                 </form>
             </div>

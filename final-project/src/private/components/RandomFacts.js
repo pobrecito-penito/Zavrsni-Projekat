@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { getRandomFact } from '../../services/api.service';
+import Spinner from '../../layout/spinner';
 
 const RandomFact = () => {
     const [selected,setSelected] = useState('');
-    const [fact,setFact] = useState('Fact coming here...');
+    const [fact,setFact] = useState('');
+
+    const [loading,setLoading] = useState(false); 
 
     useEffect(() => {
-        getRandomFact(selected).then(res => setFact(res.data));
+        setLoading(true);
+        getRandomFact(selected).then(res => {
+            setLoading(false);
+            setFact(res.data);
+        }) 
     },[selected])
     
 
@@ -23,8 +30,9 @@ const RandomFact = () => {
                 <option value="year">Year Fact</option>
             </select>
             </div>
-            <div className="fact-p">
-                <p>{fact}</p>
+            <div className="facts-p">
+                {loading ? <Spinner /> : 
+                    <p>{fact}</p> }
             </div>
         </div>
     )

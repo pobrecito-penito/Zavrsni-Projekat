@@ -8,7 +8,6 @@ const More = () => {
         <>
         <Header />
         <MoreFacts />
-        <Logout />
         </>
     )
 }

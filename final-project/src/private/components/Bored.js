@@ -17,6 +17,8 @@ const Bored = () => {
             }
             else if(number >= 1 && number < 5){
                 setSugg(`${res.data.activity}!`)
+            } else if(number === ''){
+                setSugg('Zero? :(')
             } else {
                 setSugg(`Come on, we know you don't have that many friends!`)
             }
@@ -25,11 +27,11 @@ const Bored = () => {
     }
 
     return(
-        <div className="info">
-            <p>Still bored? Let's find you something to do! Tell us how many friends you have and we'll give you a suggestion!</p>
+        <div className="bored">
+            <p>Bored? Let's find you something to do! Tell us how many friends you have and we'll give you a suggestion!</p>
                 <form onSubmit={(e) => setSuggestion(e)}>
                     <input className="int" type="number" placeholder="?" onInput={(e) => setNumber(parseInt(e.target.value))} />
-                    <input className="submit "type="submit" value="GO!" />
+                    <input  className="submit "type="submit" value="GO!" />
                 </form>
                 <div>
                     <p>{sugg}</p>

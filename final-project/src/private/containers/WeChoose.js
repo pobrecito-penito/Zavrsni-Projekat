@@ -9,7 +9,6 @@ const WeChoose = () => {
         <>
         <Header />
         <RandomFact />
-        <Logout />
         </>
     )
 

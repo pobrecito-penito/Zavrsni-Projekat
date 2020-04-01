@@ -8,7 +8,6 @@ const ConvertText = () => {
         <>
         <Header />
         <Converter />
-        <Logout />
         </>
     )
 }

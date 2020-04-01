@@ -6,21 +6,15 @@ const Logout = () => {
 
     const history = useHistory();
 
-    const handleChange = (e) => {
-        if(e.target.value === 'logout'){
-            deleteUser().then(() => {
-                history.push('/');
-            })
-        }
+    const handleClick = () => {
+        deleteUser().then(() => {
+            history.push('/');
+        })
     }
 
     return(
         <div id="logout">
-            Log out? 
-            <select className="logout-select" onChange={(e) => handleChange(e)}>
-                <option>No way!</option>
-                <option value="logout">Yes, bye!</option>
-            </select>
+           <button className="logout" onClick={() => handleClick()}>Log Out!</button>
         </div>
     )
 
