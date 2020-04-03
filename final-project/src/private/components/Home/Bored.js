@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getSuggestion } from '../../services/api.service';
+import { getSuggestion } from '../../../services/api.service';
 
 const Bored = () => {
 
@@ -13,7 +13,7 @@ const Bored = () => {
             if(number === 0){
                 setSugg(`Oops, we are sorry that you don't have any friends :( Don't worry, you can always ${res.data.activity.toLowerCase()}!`);
             } else if(number < 0){
-                setSugg(`Don't walk away from negative people - RUN!`)
+                setSugg(`Don't be negative! :)`)
             }
             else if(number >= 1 && number < 5){
                 setSugg(`${res.data.activity}!`)
@@ -31,7 +31,7 @@ const Bored = () => {
             <p>Bored? Let's find you something to do! Tell us how many friends you have and we'll give you a suggestion!</p>
                 <form onSubmit={(e) => setSuggestion(e)}>
                     <input className="int" type="number" placeholder="?" onInput={(e) => setNumber(parseInt(e.target.value))} />
-                    <input  className="submit "type="submit" value="GO!" />
+                    <input  className="submit" type="submit" value="GO!" />
                 </form>
                 <div>
                     <p>{sugg}</p>

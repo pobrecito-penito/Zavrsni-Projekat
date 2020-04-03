@@ -1,0 +1,373 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "user": "User",
+      "number": "number",
+      "fact": "favorite fact",
+      "type": "some"
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5",
+      "fact": "5 is the most common number of gears for automobiles with manual transmission.",
+      "type": "Trivia fact",
+      "id": 2
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "5",
+      "fact": "5 is the second Sierpinski number of the first kind, and can be written as S2=(22)+1.",
+      "type": "Math fact",
+      "id": 6
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "fact": "112 is the number of surat al-Ikhlas in the Qur'an.",
+      "type": "trivia",
+      "id": 9
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "fact": "1215 is the smallest number n where n and n+1 are both products of 6 or more primes.",
+      "type": "math",
+      "id": 11
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "fact": "10 is the aliquot sum of only one number the discrete semiprime 14.",
+      "type": "math",
+      "id": 12
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "fact": "103 is a strictly non-palindromic number.",
+      "type": "math",
+      "id": 13
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "4",
+      "fact": "4 is the number of movements in a symphony.",
+      "type": "Trivia fact",
+      "id": 14
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "user": "User",
+      "number": "number",
+      "fact": "Fact",
+      "type": "Type"
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "5141 is the only four digit number that is reversed in hexadecimal.",
+      "type": "math",
+      "id": 6
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5",
+      "fact": "5 is the second Sierpinski number of the first kind, and can be written as S2=(22)+1.",
+      "type": "math",
+      "id": 7
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "2",
+      "fact": "2 is the price in cents per acre the USA bought Alaska from Russia.",
+      "type": "trivia",
+      "id": 8
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "2",
+      "fact": "2 is many properties in mathematics.",
+      "type": "math",
+      "id": 9
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "1",
+      "fact": "1 is the first figurate number of every kind, such as triangular number, pentagonal number and centered hexagonal number, to name just a few.",
+      "type": "math",
+      "id": 10
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "2",
+      "fact": "2 is the number of polynucleotide strands in a DNA double helix.",
+      "type": "trivia",
+      "id": 11
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "2",
+      "fact": "2 is the first magic number in physics.",
+      "type": "trivia",
+      "id": 12
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "12",
+      "fact": "12 is the largest number that has just one syllable.",
+      "type": "trivia",
+      "id": 13
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "144 is the number of months in 12 years.",
+      "type": "trivia",
+      "id": 14
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "120",
+      "fact": "120 is the first multiply perfect number of order three (a 3-perfect number, triperfect).",
+      "type": "math",
+      "id": 15
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "82",
+      "fact": "82 is the twenty-third biprime and the twelfth of the form (2.q).",
+      "type": "math",
+      "id": 16
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "8223",
+      "fact": "8223 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 17
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "",
+      "fact": "112 is the number of surat al-Ikhlas in the Qur'an.",
+      "type": "trivia",
+      "id": 20
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "",
+      "fact": "725 is the year that Bede writes On the reckoning of time (De temporum ratione) explaining how to calculate medieval Easter.",
+      "type": "year",
+      "id": 21
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "",
+      "fact": "5600 is the number of self-complementary graphs with 13 vertices.",
+      "type": "math",
+      "id": 22
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "103",
+      "fact": "103 is a strictly non-palindromic number.",
+      "type": "math",
+      "id": 23
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "10",
+      "fact": "10 is the aliquot sum of only one number the discrete semiprime 14.",
+      "type": "math",
+      "id": 24
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "1323",
+      "fact": "1323 is a boring number.",
+      "type": "math",
+      "id": 25
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "122",
+      "fact": "122 is the smallest number n>1 so that n concatenated with n-1 0's concatenated with the reverse of n is prime.",
+      "type": "math",
+      "id": 26
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "123",
+      "fact": "123 is the 10^{th} Lucas number.",
+      "type": "math",
+      "id": 27
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "1283",
+      "fact": "1283 is the number of ways to divide a 8×8 grid of points into two sets using a straight line.",
+      "type": "math",
+      "id": 28
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "1273",
+      "fact": "1273 is a boring number.",
+      "type": "math",
+      "id": 29
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "1423",
+      "fact": "1423 is the number of digits in the 3^{rd} Cullen prime.",
+      "type": "math",
+      "id": 30
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "1463",
+      "fact": "1463 is a boring number.",
+      "type": "math",
+      "id": 31
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "173",
+      "fact": "173 is a square-free number, divisible by no perfect square.",
+      "type": "math",
+      "id": 32
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "13",
+      "fact": "13 is the number of Archimedian solids.",
+      "type": "math",
+      "id": 33
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "903",
+      "fact": "903 is the 6^{th} super Catalan number.",
+      "type": "math",
+      "id": 34
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "43",
+      "fact": "43 is a centered heptagonal number.",
+      "type": "math",
+      "id": 35
+    },
+    {
+      "user": "6fbfb29e-0078-4c2f-93fa-87c5d389fb8e",
+      "number": "7973",
+      "fact": "7973 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 36
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5",
+      "fact": "5 is the number of appendages on most starfish, which exhibit pentamerism.",
+      "type": "trivia",
+      "id": 37
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5",
+      "fact": "5 is the number of babies born in a quintuplet.",
+      "type": "trivia",
+      "id": 38
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5",
+      "fact": "5 is the number of basic tastes (sweet, salty, sour, bitter, and umami).",
+      "type": "trivia",
+      "id": 39
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "529",
+      "fact": "529 is the smallest number n so that the continued fraction for n/k contains no 2's for any 1 = k = n.",
+      "type": "math",
+      "id": 40
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "02",
+      "fact": "2 is the only number x such that the sum of the reciprocals of the powers of x equals itself.",
+      "type": "math",
+      "id": 41
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "7522",
+      "fact": "7522 is an uninteresting number.",
+      "type": "math",
+      "id": 42
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "32",
+      "fact": "32 is the ninth happy number.",
+      "type": "math",
+      "id": 43
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "422",
+      "fact": "422 is the smallest number whose 8^{th} power has 21 digits.",
+      "type": "math",
+      "id": 44
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "4",
+      "fact": "4 is the number of movements in a symphony.",
+      "type": "trivia",
+      "id": 45
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5",
+      "fact": "5 is the holy number of Discordianism, as dictated by the Law of Fives.",
+      "type": "trivia",
+      "id": 46
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "December 15th is the day in 1976 that Samoa becomes a member of the United Nations.",
+      "type": "date",
+      "id": 47
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "41 BC is the year that Lucius Antonius occupied Perusia, he accepted the appeal of the local population.",
+      "type": "year",
+      "id": 48
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "453 is the only number n so that n, 2n, and 6n together contain every digit exactly once.",
+      "type": "math",
+      "id": 49
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "650000000 is the number of years that jellyfish have been on Earth, existing before sharks and dinosaurs.",
+      "type": "trivia",
+      "id": 50
+    }
+  ]
+}

@@ -30,9 +30,6 @@ const Header = () => {
                     <Link className="nav" to="/morefacts">More Facts!</Link>
                     <Link className="nav" to="/converter">Text Converter!</Link>
                     </div>
-                    
-                
-                
             </div>
         )
     } else {

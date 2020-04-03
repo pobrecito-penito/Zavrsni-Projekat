@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { getUserById } from '../../services/api.server'
+import React, { useState, useEffect } from 'react'
+import { getUserById } from '../../../services/api.server'
 import { Link } from 'react-router-dom'
 
 const Profile = () => {
@@ -11,14 +11,19 @@ const Profile = () => {
         email: '',
     })
 
-    getUserById(localStorage.getItem('id')).then(res => {
-        setUser({
-            username: res.data.user.username,
-            name: res.data.user.name,
-            surname: res.data.user.surname,
-            email: res.data.user.email
+    let id = localStorage.getItem('id');
+
+    useEffect(() => {
+        getUserById(id).then(res => {
+            setUser({
+                username: res.data.user.username,
+                name: res.data.user.name,
+                surname: res.data.user.surname,
+                email: res.data.user.email
+            })
         })
-    })
+    },[id])
+    
 
     return(
         <div className="profile">

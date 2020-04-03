@@ -7,19 +7,37 @@ const Converter = () => {
     const [input,setInput] = useState('');
     const [message,setMessage] = useState(msg);
     const placeholder = convert('Your text here');
+    const [msgs,setMsgs] = useState([msg]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(input === ''){
-            setMessage(msg);
-        } else {
+        if(input !== ''){
             setMessage(convert(input));
             setInput('');
+            setMsgs([...msgs,(convert(input))]);
+        }
+    }
+
+    const handleBack = () => {
+        let index = msgs.findIndex(el => el === message);
+        if(index !== 0) {
+            setMessage(msgs[index-1]);
+        }
+    }
+
+    const handleForward = () => {
+        let index = msgs.findIndex(el => el === message);
+        if(index !== msgs.length - 1){
+            setMessage(msgs[index+1]);
         }
     }
 
     return(
         <div className="converter">
+            <div className="btns">
+                <button onClick={() => handleBack()}>←</button>
+                <button onClick={() => handleForward()}>→</button>
+            </div>
             <div className="msg">
             <p>{message}</p>
             </div>

@@ -32,7 +32,7 @@ const deleteUser = () => {
 
 const setId = (id) => {
     state.id = id;
-    localStorage.setItem('id',id)
+    localStorage.setItem('id',id);
 }
 
 

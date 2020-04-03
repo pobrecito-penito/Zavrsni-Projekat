@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom';
 import { loginUser } from '../../services/api.server';
-import { setToken, setId, isLogin } from '../../services/auth.service';
+import { setToken, setId } from '../../services/auth.service';
 import Header from './Header';
 
 const Login = () => {
@@ -12,17 +12,14 @@ const Login = () => {
 
     const handleClick = () => {
         loginUser(username,password).then(res => {
-            setToken(res.data.token);
-            setId(res.data.user.user_id);
-            if(isLogin()){
-                console.log('jeste');
-                
+            if(res.data.success){
+                setToken(res.data.token);
+                setId(res.data.user.user_id);
+                history.push('home');
             } else {
-                console.log('nije');
-                
+                alert('Log in failed. Try again!')
             }
-            history.push('home');
-        }) 
+        }).catch(err => alert('Wrong username or password!')) ;
     }
 
     return(
