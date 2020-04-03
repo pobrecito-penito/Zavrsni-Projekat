@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Zavrsni-Projekat/final-project/static/css/main.ecea2165.chunk.css",
+    "main.js": "/Zavrsni-Projekat/final-project/static/js/main.88ce4ab2.chunk.js",
+    "main.js.map": "/Zavrsni-Projekat/final-project/static/js/main.88ce4ab2.chunk.js.map",
+    "runtime-main.js": "/Zavrsni-Projekat/final-project/static/js/runtime-main.7a199ef3.js",
+    "runtime-main.js.map": "/Zavrsni-Projekat/final-project/static/js/runtime-main.7a199ef3.js.map",
+    "static/js/2.bbd06298.chunk.js": "/Zavrsni-Projekat/final-project/static/js/2.bbd06298.chunk.js",
+    "static/js/2.bbd06298.chunk.js.map": "/Zavrsni-Projekat/final-project/static/js/2.bbd06298.chunk.js.map",
+    "index.html": "/Zavrsni-Projekat/final-project/index.html",
+    "precache-manifest.47b30fd73a09fc4b8b2a49eb21e89cda.js": "/Zavrsni-Projekat/final-project/precache-manifest.47b30fd73a09fc4b8b2a49eb21e89cda.js",
+    "service-worker.js": "/Zavrsni-Projekat/final-project/service-worker.js",
+    "static/css/main.ecea2165.chunk.css.map": "/Zavrsni-Projekat/final-project/static/css/main.ecea2165.chunk.css.map",
+    "static/js/2.bbd06298.chunk.js.LICENSE.txt": "/Zavrsni-Projekat/final-project/static/js/2.bbd06298.chunk.js.LICENSE.txt",
+    "static/media/cat.gif": "/Zavrsni-Projekat/final-project/static/media/cat.0ad60f4a.gif",
+    "static/media/cat1.gif": "/Zavrsni-Projekat/final-project/static/media/cat1.9c95f9af.gif",
+    "static/media/cats.gif": "/Zavrsni-Projekat/final-project/static/media/cats.395f317d.gif",
+    "static/media/App.css": "/Zavrsni-Projekat/final-project/static/media/textBox.0cc38be6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a199ef3.js",
+    "static/js/2.bbd06298.chunk.js",
+    "static/css/main.ecea2165.chunk.css",
+    "static/js/main.88ce4ab2.chunk.js"
+  ]
+}
