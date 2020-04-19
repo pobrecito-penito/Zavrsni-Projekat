@@ -23,7 +23,7 @@ const isLogin = () => {
 const deleteUser = () => {
     return new Promise (resolve => {
         state.token = null;
-        state.id = null
+        state.id = null;
         localStorage.removeItem('token');
         localStorage.removeItem('id');
         resolve();

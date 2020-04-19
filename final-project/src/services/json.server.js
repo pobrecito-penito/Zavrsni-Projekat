@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'http://localhost:3000';
+const url = 'http://localhost:3005';
 
 const addFact = (path,user,number,fact,type) => {
     if(fact !== '' && type !== ''){

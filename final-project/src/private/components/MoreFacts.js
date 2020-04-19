@@ -109,7 +109,7 @@ const MoreFacts = () => {
                         <input className="int" type="number" onInput={(e) => setStart(e.target.value)} onKeyDown={(e) => {setNumbers(e); showFacts(e)}}/>
                     ), include(
                         <input className="int" type="number" onInput={(e) => setInclude(e.target.value)} onKeyDown={(e) => {setNumbers(e); showFacts(e)}}/>
-                    )or endWith(
+                    ) or endWith(
                         <input className="int" type="number" onInput={(e) => setEnd(e.target.value)} onKeyDown={(e) => {setNumbers(e); showFacts(e)}}/>
                     )
             </p>

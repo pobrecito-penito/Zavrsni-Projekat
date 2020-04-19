@@ -58,6 +58,105 @@
       "fact": "4 is the number of movements in a symphony.",
       "type": "Trivia fact",
       "id": 14
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "fact": "52 is the 6th Bell number and a decagonal number.",
+      "type": "math",
+      "id": 15
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "fact": "123 is the 10^{th} Lucas number.",
+      "type": "math",
+      "id": 16
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "25",
+      "fact": "25 is an aliquot sum of 6 and number 6 is the first (or smallest) number to have an aliquot sequence that does not culminate in 0 through a prime.",
+      "type": "Math fact",
+      "id": 18
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "fact": "February 21st is the day in 1974 that the last Israeli soldiers leave the west bank of the Suez Canal pursuant to a truce with Egypt.",
+      "type": "date",
+      "id": 19
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is the only number x such that the sum of the reciprocals of the powers of x equals itself.",
+      "type": "Math fact",
+      "id": 20
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is a primorial, as well as its own factorial.",
+      "type": "Math fact",
+      "id": 21
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is the third Fibonacci number, and the third and fifth Perrin numbers.",
+      "type": "Math fact",
+      "id": 22
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is the number of n-Queens Problem solutions for n = 4.",
+      "type": "Math fact",
+      "id": 23
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is many properties in mathematics.",
+      "type": "Math fact",
+      "id": 24
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "number": "5",
+      "fact": "5 is the number of babies born in a quintuplet.",
+      "type": "Trivia fact",
+      "id": 25
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "number": "5",
+      "fact": "5 is the number of appendages on most starfish, which exhibit pentamerism.",
+      "type": "Trivia fact",
+      "id": 26
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "number": "5",
+      "fact": "5 is the number of completed, numbered piano concertos of Ludwig van Beethoven, Sergei Prokofiev, and Camille Saint-Saëns.",
+      "type": "Trivia fact",
+      "id": 27
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "fact": "82 is the number of games in an NBA or NHL regular season.",
+      "type": "trivia",
+      "id": 31
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "fact": "12 is the number of function keys on most PC keyboards (F1 through F12).",
+      "type": "trivia",
+      "id": 32
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "fact": "1273 is a boring number.",
+      "type": "trivia",
+      "id": 33
     }
   ],
   "history": [
@@ -368,6 +467,174 @@
       "fact": "650000000 is the number of years that jellyfish have been on Earth, existing before sharks and dinosaurs.",
       "type": "trivia",
       "id": 50
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "524",
+      "fact": "524 is the number of 6-kings.",
+      "type": "math",
+      "id": 51
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "52",
+      "fact": "52 is the 6th Bell number and a decagonal number.",
+      "type": "math",
+      "id": 52
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "6528",
+      "fact": "6528 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 53
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "6528",
+      "fact": "6528 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 54
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "61",
+      "fact": "61 is 9th Mersenne Prime Exponent.",
+      "type": "math",
+      "id": 55
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "6110",
+      "fact": "6110 is a boring number.",
+      "type": "math",
+      "id": 56
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "912",
+      "fact": "912 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 57
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "5524",
+      "fact": "5524 is a boring number.",
+      "type": "math",
+      "id": 58
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "92",
+      "fact": "92 is the number of different arrangements of 8 non-attacking queens on an 8×8 chessboard.",
+      "type": "math",
+      "id": 59
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "020",
+      "fact": "20 is the basis for vigesimal number systems.",
+      "type": "math",
+      "id": 60
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "",
+      "fact": "206 is the number of bones in the typical adult human body.",
+      "type": "trivia",
+      "id": 61
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "1/1",
+      "fact": "January 1st is the day in 1801 that the dwarf planet Ceres is discovered by Giuseppe Piazzi.",
+      "type": "date",
+      "id": 62
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "3",
+      "fact": "3 is cans of Spam consumed every second in the United States.",
+      "type": "trivia",
+      "id": 63
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "3",
+      "fact": "3 is the number of notes in a triad, the basic form of any chord.",
+      "type": "trivia",
+      "id": 64
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "2",
+      "fact": "2 is the lowest channel of television in the United States, Canada, Argentina and Mexico on which television signals are broadcast.",
+      "type": "trivia",
+      "id": 65
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "65",
+      "fact": "65 is an aliquot sum of 19 and is the first composite number in the 19-aliquot tree.",
+      "type": "math",
+      "id": 66
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "357",
+      "fact": "357 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 67
+    },
+    {
+      "user": "3e92cd18-3858-4d4f-90dd-aece8b66bb7b",
+      "number": "6752",
+      "fact": "6752 is a number for which we're missing a fact (submit one to numbersapi at google mail!).",
+      "type": "math",
+      "id": 68
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "25",
+      "fact": "25 is an aliquot sum of 6 and number 6 is the first (or smallest) number to have an aliquot sequence that does not culminate in 0 through a prime.",
+      "type": "math",
+      "id": 69
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "",
+      "fact": "February 21st is the day in 1974 that the last Israeli soldiers leave the west bank of the Suez Canal pursuant to a truce with Egypt.",
+      "type": "date",
+      "id": 70
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is a primorial, as well as its own factorial.",
+      "type": "math",
+      "id": 71
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is the third Fibonacci number, and the third and fifth Perrin numbers.",
+      "type": "math",
+      "id": 72
+    },
+    {
+      "user": "a791328f-1f76-4040-a65a-23bd90b4ef04",
+      "number": "2",
+      "fact": "2 is the number of n-Queens Problem solutions for n = 4.",
+      "type": "math",
+      "id": 73
+    },
+    {
+      "user": "afcdff1e-16e7-4aca-93bd-0789cb1f8707",
+      "number": "",
+      "fact": "76 is the atomic number of osmium.",
+      "type": "trivia",
+      "id": 78
     }
   ]
 }
